@@ -1,0 +1,125 @@
+html {
+    background-color: rgb(211, 211, 211);
+}
+
+.logo {
+
+    border : 2px dotted rgb(229, 255, 0);
+}
+.logos {
+
+    border : 2px dotted rgb(229, 255, 0);
+}
+
+.logo img{
+    border : 2px dotted rgb(255, 0, 221);
+  
+    }
+
+
+
+
+
+
+#header-top {
+    border : 4px solid red;
+}
+        .header-slider {
+            border : 2px solid rgb(229, 255, 0);
+        }
+                .header-slider-content {
+                    border : 3px solid rgb(11, 192, 26);
+                }
+                        .header-slider-content-subtitle {
+                            border : 2px dotted rgb(0, 255, 213);
+                        }
+                        .header-slider-content-title {
+                            border : 2px dotted rgb(0, 102, 255);
+                        }
+                                .header-slider-content-title div{
+                                    border : 2px dotted rgb(0, 102, 255);
+                                }
+                                .header-slider-content-title div p{
+                                    border : 2px dotted rgb(165, 170, 177);
+                                }
+                        .header-slider-content-desc {
+                            border : 2px dotted rgb(55, 0, 255);
+                        }
+                            .header-slider-content-desc p {
+                                border : 2px solid rgb(14, 192, 44);
+                        }
+                        .header-slider-content-button {
+                            border : 2px dotted rgb(255, 0, 221);
+                        }
+#discography-container {
+    border: 4px solid rgb(255, 0, 85);
+}
+        .album {
+            border : 2px dotted rgb(107, 23, 110);
+        }
+
+#activities-container {
+    border: 5px dotted rgb(209, 140, 12);
+}
+        .activities-title {
+            border : 2px dotted rgb(255, 0, 128);
+        }
+        .activities-all-container {
+            border : 4px dotted rgb(160, 25, 25);
+        }
+                .activity {
+                    border : 4px dotted rgb(41, 160, 25);
+                }
+                        .activity-title {
+                            border : 2px solid rgb(13, 15, 6);
+                        }
+                        .activity-desc {
+                            border : 2px solid rgb(129, 129, 7);
+                        }
+                        .activity-button {
+                            border : 2px solid rgb(16, 139, 0);
+                        }
+
+
+#video-container {
+    border: 5px dotted rgb(209, 140, 12);
+}
+        .videos {
+            border : 4px dotted rgb(160, 25, 25);
+        }
+                .video {
+                    border : 4px dotted rgb(41, 160, 25);
+                }
+                        .player {
+                            border : 2px solid rgb(129, 129, 7);
+                        }
+                        .player-title {
+                            border : 2px solid rgb(16, 139, 0);
+                        }
+
+#studio36-container {
+    border: 5px dotted rgb(209, 140, 12);
+}
+        .studio36-photos-container {
+            border : 4px dotted rgb(160, 25, 25);
+        }
+                .studio36-photo {
+                    border : 4px dotted rgb(41, 160, 25);
+                }
+
+        .studio36-desc-container {
+            border : 4px dotted rgb(160, 25, 25);
+        }
+        .studio36-title {
+            border : 4px dotted rgb(41, 160, 25);
+        }
+        ul.disciplines {
+            border : 2px solid rgb(16, 139, 0);
+        }
+        .studio36-text {
+            border : 2px solid rgb(16, 139, 0);
+        }
+        .studio36-button {
+            border : 2px solid rgb(16, 139, 0); 
+        }
+                

@@ -31,7 +31,7 @@ iframe {
             width: 40px;
             margin: 5px;
             background-size: 180%;
-            background-image: url(/img/logo_resaux_scociaux.png);
+            background-image: url(../img/logo_resaux_scociaux.png);
 
         }
                 .logo1 {
@@ -72,7 +72,7 @@ iframe {
             position: relative;
             height: 100%;
             width: auto;
-            background-image: url(/img/Banner_slideshow-22.png);
+            background-image: url(../img/Banner_slideshow-22.png);
         }
                 .header-slider-content {
                     position: relative;

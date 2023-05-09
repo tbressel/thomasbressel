@@ -220,7 +220,7 @@ nav {
 #discography-container {
     position: relative;
     display: block;
-    height: 450ox;
+    height: 450x;
     width: 98%;
 }
         .album-container {
@@ -407,7 +407,7 @@ nav {
                         
 
 #studio36-container {
-    z-index: 3;
+ 
     background-color: black;
     position: relative;
     display: block;
@@ -416,14 +416,14 @@ nav {
     padding: 20px;
 }
         .studio36-photos-container {
-            z-index: 3;
+         
             position: relative;
             display: block;
             width: auto;
             height: fit-content;
         }
                 .studio36-photo img {
-                    z-index: 3;
+              
                     position: relative;
                     display: block;
                     width: auto;
@@ -432,7 +432,7 @@ nav {
                     margin-right: auto;
                 }
         .studio36-desc-container {
-            z-index: 3;
+         
             position: relative;
             display: block;
             width: auto;
@@ -479,3 +479,99 @@ nav {
             display: block;
             width: auto;
         }
+footer {
+    font-family: var(--Font_Roboto);
+    font-size: 0.9rem;
+    color: #686868;
+    background-color: black;
+    border-top: 1px solid rgba(128, 128, 128, 0.349);
+    text-align: center;
+    height: 100px;
+    width: auto;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 200px)
+                and (max-width : 749px)
+
+{
+    html {
+        display:contents;
+    }
+    
+}
+
+
+@media screen and (min-width: 750px)
+                
+
+{
+
+    #discography-container {
+        display: flex;
+        justify-content:space-between;     
+    }
+            .album-container {
+                display: inline-block;              
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+                min-width: 150px;
+            }
+                    .zoom {
+                        height: 200px;
+                    }
+                            .zoom-title {
+                                top:-120px;
+                                height: 900px;
+                                font-size: 1rem;
+                            }
+    .activities-all-container {
+        flex-direction: row;
+    }
+            .activity {
+               height: auto;
+            }
+                    .activity-desc {
+                        height: 100%;
+                    }
+
+        .videos {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+                .video {
+                    display: inline-block;
+                    width: fit-content;
+                }
+                  .player-title {
+                        height: 15px;
+                        }
+
+
+#studio36-container {
+    display: flex;
+}
+
+
+        .studio36-desc-container {
+            height: auto;
+        }
+
+
+
+
+
+
+
+
+
+
+                            
+    
+}

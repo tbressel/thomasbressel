@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () =>
         });
 
 // Gestion des album cliquable
-    let flag = 0
+
         const ALBUMS = document.querySelectorAll(".album-container");
         ALBUMS.forEach(un_element => 
             {
@@ -39,35 +39,42 @@ window.addEventListener("DOMContentLoaded", () =>
                             });
                                                                              
             });
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     });
+
+
+
+
+    // test du slider header
+
+document.addEventListener('click' ,() => 
+{
+   
+    setTimeout ( function ()
+    {
+       
+    document.getElementById("header-top").classList.remove("img3");
+    
+    
+                setTimeout ( function ()
+                {
+                    document.getElementById("header-top").classList.remove("img2");
+                
+                            setTimeout ( function ()
+                            {
+                                          document.getElementById("header-top").classList.add("img2");
+                                          document.getElementById("header-top").classList.add("img3");
+                            },4000);
+    
+                },4000);
+            },4000);
+            
+            
+            document.removeEventListener('mousemove');
+
+})
+
+
+
 

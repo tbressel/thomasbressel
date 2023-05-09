@@ -31,10 +31,6 @@ body {
         }
 
 
-iframe {
-    width:fit-content;
-    height:fit-content;
-}
 
 
 
@@ -86,13 +82,13 @@ nav {
 
 
 .social-bar {
-
-    position: absolute;
+    z-index: 0;
+    position: fixed;
     height: 200px;
     width: 40px;
     top:0px;
     right: 0;
-    background-color: #91761831;
+    background-color: #303a0fad;
 }
         .logos {
             position:relative;
@@ -190,7 +186,7 @@ nav {
                             line-height: 1.5;
                         }
 
-                        .header-slider-content-button, .activity-button {
+                        .header-slider-content-button, .activity-button, .studio36-button {
                             display: block;
                             position: relative;
                             background-color: #cca80a; 
@@ -200,7 +196,7 @@ nav {
                             margin-left: auto;
                             margin-right: auto;
                         }
-                        .header-slider-content-button-ombre, .activity-button-ombre {
+                        .header-slider-content-button-ombre, .activity-button-ombre, .studio36-button-ombre {
                             display: block;
                             position: relative;
                             background-color: none;
@@ -209,7 +205,7 @@ nav {
                             border-bottom: 1px solid #cca80a69;
                             border-right: 1px solid #cca80a50;
                         }
-                        .header-slider-content-button-ombre p, .activity-button-ombre p{
+                        .header-slider-content-button-ombre p, .activity-button-ombre p, .studio36-button-ombre p{
                             font-family: var(--Font_ExoRegular);
                             font-weight: 700;
                             font-size: 1rem;
@@ -404,50 +400,82 @@ nav {
                             margin: 5px;
                             padding : 2px;
                         }
+                        iframe {
+                            height: 240px;
+                            min-width: 400px
+                        }
+                        
 
 #studio36-container {
+    z-index: 3;
+    background-color: black;
     position: relative;
     display: block;
     width: auto;
-    height: fit-content
+    height: fit-content;
+    padding: 20px;
 }
         .studio36-photos-container {
+            z-index: 3;
             position: relative;
             display: block;
             width: auto;
-            height: fit-content
+            height: fit-content;
         }
-                .studio36-photo {
+                .studio36-photo img {
+                    z-index: 3;
                     position: relative;
                     display: block;
                     width: auto;
-                    height: fit-content
+                    height: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
         .studio36-desc-container {
+            z-index: 3;
             position: relative;
             display: block;
             width: auto;
-            height: fit-content
+            height: fit-content;
         }
         .studio36-title {
+            font-family: var(--Font_ExoRegular);
+            color: #cca80a;
+            font-weight: 700;
+            font-size: 2rem;
             position: relative;
             display: block;
             width: auto;
-            height: fit-content
+            height: fit-content;
+            
+            padding: 20px;
+            padding-left: 50px;
+            border-top: 2px solid yellow;
         }
-        ul.disciplines {
+        ul.disciplines li {
+            font-family: var(--Font_Roboto);
+            color: #686868;
+            font-size: 1.3rem;
+            font-weight: 400;
             position: relative;
             display: block;
+            
+            padding-left: 50px;
+            
         }
         .studio36-text {
+            font-family: var(--Font_Roboto);
+            font-size: 0.9rem;
+            color: #686868;
             position: relative;
             display: block;
             width: auto;
-            height: fit-content
+            height: fit-content;
+            margin-top : 50px;
+            padding-left: 50px;
         }
         .studio36-button {
             position: relative;
             display: block;
             width: auto;
-            height: fit-content
         }

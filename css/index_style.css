@@ -8,13 +8,82 @@
 html {
     --Font_ExoRegular:'Exo', sans-serif;
     --Font_ExoBold:'Exo', sans-serif;
+    --Font_Roboto :'Roboto', sans-serif;
+    opacity: 0;
+    background-color: #ebe9e1;
 }
+.load-ok {
+    transition: 5s;
+    opacity: 1;
+}
+
+body {
+    
+    transition: 500ms;
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+        .body-toggle {
+            transition: 500ms;
+            left: 200px;
+    
+        }
 
 
 iframe {
     width:fit-content;
     height:fit-content;
 }
+
+
+
+.button-burger {
+    z-index: 2;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+    border: 2px solid #cca80a;
+    border-radius: 5px;
+    
+}
+        .bar-burger {
+            position: relative;
+            height: 2px;
+            width: 15px;
+            background-color: #cca80a;
+            margin-left: 8px;
+            margin-right: 2px;
+            margin-top: 5px;
+        }
+
+
+nav {
+
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #7e690b;
+}
+    #menu-burger header {
+        background-color: #cca80a;
+        height: 50px;
+    }
+
+    #menu-burger ul li {
+        font-family: var(--Font_Roboto);
+        color: #ffffff;
+        font-weight: 400;
+        height: 30px;
+        padding-left: 15px;
+        padding-top: 10px;
+
+    }
+
 
 .social-bar {
 
@@ -65,8 +134,10 @@ iframe {
 
 
 #header-top {
+    z-index: 1;
     height: 650px;
     display: block;
+    
 }
         .header-slider {
             position: relative;
@@ -108,7 +179,7 @@ iframe {
 
                         }
                         .header-slider-content-desc {
-                            font-family: 'Roboto', sans-serif;
+                            font-family:var(--Font_Roboto);
                             font-size: 0.9rem;
                             color: #ebe9e1;
                             position: relative;
@@ -119,17 +190,34 @@ iframe {
                             line-height: 1.5;
                         }
 
-                        .header-slider-content-button {
+                        .header-slider-content-button, .activity-button {
+                            display: block;
                             position: relative;
+                            background-color: #cca80a; 
+                            height : 50px;
+                            max-width: fit-content;
                             margin-top: 4rem;
                             margin-left: auto;
                             margin-right: auto;
-                            display: block;
-                            background-color: #cca80a; 
-                            height : 50px;
-                            max-width: 200px;
                         }
-                        .header-slider-content-button-ombre p{
+                        .header-slider-content-button-ombre, .activity-button-ombre {
+                            display: block;
+                            position: relative;
+                            background-color: none;
+                            width: 105%;
+                            height: 115%;
+                            border-bottom: 1px solid #cca80a69;
+                            border-right: 1px solid #cca80a50;
+                        }
+                        .header-slider-content-button-ombre p, .activity-button-ombre p{
+                            font-family: var(--Font_ExoRegular);
+                            font-weight: 700;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            color: white;
+                            padding-top: 15px;
+                            padding-left: 10px;
+                            padding-right: 10px;
                             text-align: center;
                         }
 
@@ -139,58 +227,130 @@ iframe {
     height: 450ox;
     width: 98%;
 }
-        .album {
+        .album-container {
             position: relative;
             width : auto;
             height: 150px;
             margin : 20px;
+            overflow-y: hidden;
+
         }
+
+        .cover {
+            transition: 300ms;
+            position: relative;
+            width : auto;
+            height: 150px;
+         
+
+        }
+       .zoom {
+            transition: 300ms;
+            width : auto;
+            height: 200px;
+        }
+        .zoom-title {
+            background-color: #cca80a;
+            position: relative;
+            width: auto;
+            top:-110px;
+            height: 60px;
+            transition: 200ms;
+            color: #ffffff;
+            font-family: var(--Font_ExoBold);
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.3rem;
+            padding-top: 5px;
+        }
+        .album-title {
+            background-color: #cca80a;
+            position: relative;
+            width: auto;
+            top:0;
+            height: 60px;
+            transition: 200ms;
+            color: #ffffff;
+            font-family: var(--Font_ExoBold);
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.3rem;
+            padding-top: 5px;
+        }
+
+
+
 #activities-container {
     position: relative;
     display: block;
     height: fit-content;
     width: auto;
 }
-        .activities-title {
-            position: relative;
-            display: block;
-            height: fit-content;
-            width: auto;
-            margin: 10px;
-            padding : 5px;
+        .activities-title p {
+            font-family: var(--Font_ExoRegular);
+            color: #686868;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;  
+            padding-top: 20px;          
+            padding-bottom: 20px;          
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .activities-all-container {
+            color: #686868;
             position: relative;
-            display: block;
+            display: flex;
+            flex-direction: column;
             width: auto;
             height: fit-content;
             margin : 10px;
             padding: 5px;
         }
                 .activity {
+                    border-top:2px solid rgba(128, 128, 128, 0.322);
                     position: relative;
-                    display: block;
+                    display: flex;
+                    flex-direction: row;
                     height: fit-content;
                     width: auto;
                     margin: 10px;
                     padding: 5px;
                 }
+
+                .left-container {
+                    display: inline-flex;
+                    flex-direction: column;
+                }
+                .activity img {
+                    position: relative;
+                    width : 70px;
+                    height : 70px;
+                    padding :5px;
+                    margin: 15px;
+                }
+
+
+                        .right-container {
+                            display: inline-flex;
+                            flex-direction: column;
+                        }
                         .activity-title {
+                            font-family: var(--Font_ExoBold);
+                            font-weight: 700;
+                            text-transform: uppercase;
                             position: relative;
                             display: block;
-                            height: 30px;
+                            height: fit-content;
                             margin-bottom: 10px;
                             width: 100%;
                         }
-                                .activity img {
-                                    position: relative;
-                                    width : 50px;
-                                    height : 50px;
-                                }
                                         .activity-desc {
+                                            font-family: var(--Font_Roboto);
+                                            font-size: 0.9rem;
                                             position: relative;
                                             display: inline;
-                                            height: 50px;
+                                            height: fit-content;
                                             width: auto;
                                             margin: 0;
                                             padding: 0;
@@ -198,6 +358,7 @@ iframe {
                                                 .activity-button {
                                                     position: relative;
                                                     display: inline-block;
+                                                 
                                                     margin-top: 10px;
                                                     height: 50px;
                                                     width: 100%;

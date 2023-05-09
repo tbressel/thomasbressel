@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="css/index_style.css">
-    <link rel="stylesheet"  href="css/debug.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet"  href="css/index_style.css">
+    <!-- <link rel="stylesheet"  href="css/debug.css"> -->
 
 
 
     <title>Document</title>
 </head>
-<body>
-
-<nav id="menu-burger">
-
-</nav>
-
-
+<body class="">
+    <div class="button-burger">
+        <div class="bar-burger"></div>
+        <div class="bar-burger"></div>
+        <div class="bar-burger"></div>
+    </div>
+    
+    <nav id="menu-burger">
+        <div>
+            <header>
+                <p>
+                    MENU
+                </p>
+            </header>
+        </div>
+        <ul>
+            <li>Espace privé</li>
+            <li>
+                <ul>Apprendre
+                <!-- <li>Apprendre la guitare</li>
+                <li>Apprendre la basse</li> -->
+                </ul>
+            </li>
+            <!-- <ul>Bibliothèque -->
+                <li>Partitions officielles</li>
+            </ul>
+        </ul>
+    </nav>
 
 <div id="header-top">
     
@@ -61,7 +83,7 @@
                 <div class="header-slider-content-button">
                     <div class="header-slider-content-button-ombre">
                     <p>
-                        Bouton
+                        En savoir plus ... ->
                     </p>
                     </div>
                 </div>
@@ -73,31 +95,41 @@
         </div>
 </div>
 
-<div id="discography-container  ">
-    <div class="album">
+<div id="discography-container">
+
+
+    <div class="album-container">
+        <img class="cover" src="./img/a0442367269_7.jpg" alt="">
         <div class="album-title">
-            <img src="./img/a0442367269_7.jpg" alt="">
+            Influences Of Time (2006)
+       </div>
+    </div>
+    <div class="album-container">
+        <img class="cover" src="./img/a4282581913_7.jpg" alt="">
+        <div class="album-title">
+            The Land Of Chaos (2008)
         </div>
     </div>
-    <div class="album">
+
+    <div class="album-container">
+        <img class="cover" src="./img/a3095956017_7.jpg" alt="">
         <div class="album-title">
-            <img src="./img/a0768614711_7.jpg" alt="">
+            Virtual Tragedies (2010) 
+        </div>
+    </div>
+    
+
+    <div class="album-container">
+        <img class="cover" src="./img/a0768614711_7.jpg" alt="">
+        <div class="album-title">
+            Live @ El Camino (2015)
         </div>
 
     </div>
-    <div class="album">
+    <div class="album-container">
+        <img class="cover" src="./img/a1375429127_7.jpg" alt="">
         <div class="album-title">
-            <img src="./img/a1375429127_7.jpg" alt="">
-        </div>
-    </div>
-    <div class="album">
-        <div class="album-title">
-            <img src="./img/a3095956017_7.jpg" alt="">
-        </div>
-    </div>
-    <div class="album">
-        <div class="album-title">
-            <img src="./img/a4282581913_7.jpg" alt="">
+            ... The Metal Injection (2013)
         </div>
     </div>
 </div>
@@ -105,36 +137,60 @@
 
 <div id="activities-container">
     <div class="activities-title">
+        <p>
+            Cours, Ateliers & Stages
 
+        </p>
     </div>
     <div class="activities-all-container">
         
         <div class="activity">
-            <div class="activity-title">
-                
-            </div>
-            <img src="./img/unnamed_1.png" alt="">
-            <div class="activity-desc">
 
+            <div class="left-container">
+                    <img src="./img/unnamed_1.png" alt="">
             </div>
-            <div class="activity-button">
 
+            <div class="right-container">  
+                    <div class="activity-title">
+                        Les Olympiades de la guitare
+                    </div>
+                    <div class="activity-desc">
+                        Au mois de juillet je vous propose un stage pour les guitaristes avancés qui désirent       repousser leur limite technique de jeu et leur rapidité.
+                    </div>
+                    <div class="activity-button">
+                        <div class="activity-button-ombre">
+                            <p>
+                                Lire la suite ....
+                            </p>
+                            </div>
+                        
+                    </div>
             </div>
         </div>
 
         <div class="activity">
+
+            <div class="left-container">
+                <img src="./img/unnamed_1.png" alt="">
+        </div>
+        <div class="right-container">  
             <div class="activity-title">
-
+                Atelier home studio
             </div>
-            <img src="./img/unnamed_1.png" alt="">
+           
             <div class="activity-desc">
-
+                Je vous propose égalalement des cours de Home Studio pour les débutants qui désirent apprendre à enregistrer avec du matériel grand publics, accessible à tous.
             </div>
             <div class="activity-button">
-
+                <div class="activity-button-ombre">
+                    <p>
+                        Lire la suite ....
+                    </p>
+                    </div>
+               
             </div>
         </div>
-
+        </div>
 
 
     </div>
@@ -145,7 +201,7 @@
     <div class="videos">
         <div class="video">
             <div class="player">
-                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" ></iframe>
             </div>
             <div class="player-title">
 
@@ -153,7 +209,7 @@
         </div>
         <div class="video">
             <div class="player">
-                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0"  ></iframe>
             </div>
             <div class="player-title">
 
@@ -161,7 +217,7 @@
         </div>
         <div class="video">
             <div class="player">
-                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" ></iframe>
             </div>
             <div class="player-title">
 
@@ -169,7 +225,7 @@
         </div>
         <div class="video">
             <div class="player">
-                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/X0oPWB-JXR4" title="YouTube video player" frameborder="0" ></iframe>
             </div>
             <div class="player-title">
 
@@ -217,7 +273,6 @@
 
 
 
-
-
+<script src="js/global.js"></script>
 </body>
 </html>

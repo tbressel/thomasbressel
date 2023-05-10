@@ -47,34 +47,28 @@ window.addEventListener("DOMContentLoaded", () =>
 
 
     // test du slider header
-
 document.addEventListener('click' ,() => 
 {
-   
+
     setTimeout ( function ()
     {
-       
+    
     document.getElementById("header-top").classList.remove("img3");
-    
-    
+ 
+ 
                 setTimeout ( function ()
                 {
                     document.getElementById("header-top").classList.remove("img2");
-                
+             
                             setTimeout ( function ()
                             {
                                           document.getElementById("header-top").classList.add("img2");
                                           document.getElementById("header-top").classList.add("img3");
                             },4000);
-    
+ 
                 },4000);
             },4000);
-            
-            
+         
+         
             document.removeEventListener('mousemove');
-
 })
-
-
-
-
